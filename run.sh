@@ -7,7 +7,7 @@
 #* @author intrd - http://dann.com.br/
 #* @copyright 2015 intrd
 #* @license private
-#* @link http://github.com/intrd/telegram-simple_phpbot/
+#* @license Creative Commons Attribution-ShareAlike 4.0 - http://creativecommons.org/licenses/by-sa/4.0/
 #* Dependencies: See README.
 #*/
 
