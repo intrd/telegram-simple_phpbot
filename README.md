@@ -21,7 +21,7 @@ apt-get install git
 git clone http://github.com/intrd/telegram-simple_phpbot
 
 Stay outside and clone all dependencies below..
-git clone https://github.com/intrd/php-common/ 
+git clone http://github.com/intrd/php-common/ 
 ```
 ## Directory structure
 Follow this sample structure..
@@ -43,11 +43,7 @@ Follow this sample structure..
 2. Edit `sample.php` and set your `$botkey`
 3. Search on Telegram for yoour `@username_bot` and start a conversation.. 
 4. Now run `php sample.php`, it shows what is your `chatID` and set `$debug_chatid` at sample.php.. All your bot activity will be forwarded to this opened chat, for debbugin purpose.
-5. Test if your `botID`, `chatID` and `apikey` by doing a HTTP GET request browsing to your bot URL: `https://api.telegram.org/bot<botid>:<botkey>/sendmessage?chat_id=<chatid>&text=hello%20world!` in my sample `https://api.telegram.org/bot234015785:AAEsvIjg0AcWOINXR0Xt-TGLamuz9k8f10Y/sendmessage?chat_id=65628842&text=hello%20world!`, if the bot says `Hello Word!` to you, its ok. (PS: group chats use negative chatIDs, `-<chatid>`)
-```
-Http valid response..
-{"ok":true,"result":{"message_id":4,"from":{"id":234015785,"first_name":"intrdtest","username":"intrd_bot"},"chat":{"id":2722434,"first_name":"intrd","username":"intrd","type":"private"},"date":1462316228,"text":"hello world!"}}
-```
+5. Test if your `botID`, `chatID` and `apikey` by doing a HTTP GET request browsing to your bot URL: `https://api.telegram.org/bot<botid>:<botkey>/sendmessage?chat_id=<chatid>&text=hello%20world!` in my sample `https://api.telegram.org/bot234015785:AAEsvIjg0AcWOINXR0Xt-TGLamuz9k8f10Y/sendmessage?chat_id=65628842&text=hello%20world!`, if the bot says `Hello Word!` to you, its ok. (PS: group chats use negative chatIDs, `-<chatid>`) ` HTTP response: {"ok":true,"result":{"message_id":4,"from":{"id":234015785,"first_name":"intrdtest","username":"intrd_bot"},"chat":{"id":2722434,"first_name":"intrd","username":"intrd","type":"private"},"date":1462316228,"text":"hello world!"}}`
 6. Change the `$trigger_botname` to your `username_bot` or something you want to trigger your bot replies on groups.  
 7. To check if someone is talking w/ your bot every 5 seconds use my `./run.sh` bash daemon sample, or `watch -n5 php sample.php` or setup a cronjob
 9. Now put him on a group.. test if your bot is replying when you mention his `$trigger_botname`, ask him about `day of week`, say him some of `$bads`, customize `reply_get()` function.
