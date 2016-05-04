@@ -46,7 +46,8 @@ Follow this sample structure..
 5. Test if your `botID`, `chatID` and `apikey` by doing a HTTP GET request browsing to your bot URL: `https://api.telegram.org/bot<botid>:<botkey>/sendmessage?chat_id=<chatid>&text=hello%20world!` in my sample `https://api.telegram.org/bot234015785:AAEsvIjg0AcWOINXR0Xt-TGLamuz9k8f10Y/sendmessage?chat_id=65628842&text=hello%20world!`, if the bot says `Hello Word!` to you, its ok. PS: group chats use negative chatIDs, `-<chatid>`
 6. Change the `$trigger_botname` to your `username_bot` or something you want to trigger your bot replies on groups.  
 7. To check if someone is talking w/ your bot every 5 seconds use my `./run.sh` bash daemon sample, or `watch -n5 php sample.php` or setup a cronjob
-9. Now put him on a group.. test if your bot is replying when you mention his `$trigger_botname`, ask him about `day of week`, say him some of `$bads`, customize `reply_get()` function.
+8. Now put him on a group.. 
+1. Test if your bot is replying when you mention his `$trigger_botname`, ask him about `day of week`, say him some of `$bads`, customize `reply_get()` function.
 ![telegram_simple_bot](/telegram_simple_bot.jpg?raw=true "telegram_simple_bot")
 10. Script this 4 your needs and respect the CC license, thanks!
 
