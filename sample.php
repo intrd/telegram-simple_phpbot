@@ -13,7 +13,7 @@
 */
 
 date_default_timezone_set('America/Sao_Paulo'); //set to your timezone
-$debug=false; //disable this after setup your debuggin chatID
+$debug=true; //disable this after setup your debuggin chatID
 $root=dirname(__FILE__)."/";
 $ext_path=$root."../";
 $tmp_path=$ext_path."TMP/";
