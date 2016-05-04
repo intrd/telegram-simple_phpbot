@@ -47,7 +47,7 @@ Follow this sample structure..
 6. Change the `$trigger_botname` to your `username_bot` or something you want to trigger your bot replies on groups.  
 7. To check if someone is talking w/ your bot every 5 seconds use my `./run.sh` bash daemon sample, or `watch -n5 php sample.php` or setup a cronjob
 8. Now put him on a group.. 
-![telegram_simple_bot](/telegram_simple_bot.jpg?raw=true "telegram_simple_bot")
+> ![telegram_simple_bot](/telegram_simple_bot.jpg?raw=true "telegram_simple_bot")
 1. Test if your bot is replying when you mention his `$trigger_botname`, ask him about `day of week`, say him some of `$bads`, customize `reply_get()` function.
 10. Script this 4 your needs and respect the CC license, thanks!
 
