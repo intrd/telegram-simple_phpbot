@@ -4,35 +4,26 @@
  * 
 * @package telegram-simple_phpbot
 * @version 1.0
-* @category api
 * @author intrd - http://dann.com.br/
-* @copyright 2015 intrd
+* @copyright 2016 intrd
 * @license Creative Commons Attribution-ShareAlike 4.0 - http://creativecommons.org/licenses/by-sa/4.0/
 * @link http://github.com/intrd/telegram-simple_phpbot/
-* Dependencies: See README.
+* Dependencies: See composer.json
 */
 ```
-## Installation
+## Installation & updating
 ```
-apt-get update & apt-get upgrade
-apt-get install php5-curl php5-sqlite php5-cli
+First install system requiriments 
+$ sudo apt-get update & apt-get upgrade
+$ sudo apt-get install curl git php5-curl php5-cli
+$ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
-apt-get install git
-git clone http://github.com/intrd/telegram-simple_phpbot
+Now download and install the package (the Composer automatically download all dependencies)
+$ git clone https://github.com/intrd/telegram-simple_phpbot && cd telegram-simple_phpbot
+$ composer install
 
-Stay outside and clone all dependencies below..
-git clone http://github.com/intrd/php-common/ 
-```
-## Directory structure
-Follow this sample structure..
-```
-|_Your_project_directory
- |_index.php //index of your project calling telegram-simple_phpbot when it is need (see sample.php)
- |_telegram-simple_phpbot //this cloned directory
-  |_sample.php //sample.php testing/showing how to call functions from instagram-api-nooauth
- |_php-common //depencency
- |_TMP //temp directory
-
+To check for update..
+$ composer update
 ```
 ## Usage.. sample.php
 

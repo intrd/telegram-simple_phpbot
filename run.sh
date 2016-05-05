@@ -3,12 +3,11 @@
 # * 
 #* @package telegram-simple_phpbot
 #* @version 1.0
-#* @category api
 #* @author intrd - http://dann.com.br/
-#* @copyright 2015 intrd
-#* @license private
+#* @copyright 2016 intrd
 #* @license Creative Commons Attribution-ShareAlike 4.0 - http://creativecommons.org/licenses/by-sa/4.0/
-#* Dependencies: See README.
+#* @link http://github.com/intrd/telegram-simple_phpbot/
+#* Dependencies: See composer.json
 #*/
 
 #!/bin/bash
