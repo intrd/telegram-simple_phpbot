@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c531bda7117e9ed7de83c3d6f2fb54de",
+    "hash": "761e9a5fb6e516541b9c444bc90a0af5",
     "content-hash": "d531ead8004ca4bba40668f8c488e8f6",
     "packages": [
         {
@@ -13,18 +13,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/intrd/php-common.git",
-                "reference": "20c219f76b9100ac735e163941b38fc794448311"
+                "reference": "46ed19209fe398e45a5d87edb076ae829efbfb49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intrd/php-common/zipball/20c219f76b9100ac735e163941b38fc794448311",
-                "reference": "20c219f76b9100ac735e163941b38fc794448311",
+                "url": "https://api.github.com/repos/intrd/php-common/zipball/46ed19209fe398e45a5d87edb076ae829efbfb49",
+                "reference": "46ed19209fe398e45a5d87edb076ae829efbfb49",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
             "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "": "src/"
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "CC-BY-SA-4.0"
@@ -44,7 +49,7 @@
                 "intrd",
                 "php"
             ],
-            "time": "2016-05-05 08:27:33"
+            "time": "2016-05-05 17:50:51"
         }
     ],
     "packages-dev": [],

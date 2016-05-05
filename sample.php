@@ -16,11 +16,10 @@ require __DIR__ . '/vendor/autoload.php';
 use php\intrdCommons;
 use telegram\simplePhpBot;
 
-$test = new commons();
-$test = new simplePhpBot();
+$commons = new intrdCommons();
+$bot = new simplePhpBot();
 
 die;
-require_once("functions.php");
 
 date_default_timezone_set('America/Sao_Paulo'); //set to your timezone
 $debug=true; //disable this after setup your debuggin chatID
