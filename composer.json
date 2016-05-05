@@ -1,6 +1,5 @@
 {
     "name": "intrd/telegram-simple_phpbot",
-    "version": "1.0.0",
     "description": "Telegram Simple PHP Bot - A different and simple approach to use Telegram Bot Plataform (No SSL or setWebhook needed)",
     "keywords": ["telegram","bot","eggdrop","php","intrd"],
     "homepage": "http://github.com/intrd/telegram-simple_phpbot",
