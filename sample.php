@@ -12,9 +12,12 @@
 */
 
 require __DIR__ . '/vendor/autoload.php';
-use phpCommon\intrd;
+//require __DIR__ . '/vendor/intrd/php-common/src/intrd.php';
+use php\intrdCommons;
+use telegram\simplePhpBot;
 
-$test = new intrd();
+$test = new commons();
+$test = new simplePhpBot();
 
 die;
 require_once("functions.php");
