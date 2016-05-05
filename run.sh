@@ -11,7 +11,7 @@
 #*/
 
 #!/bin/bash
-LOGFILE="../LOGS/telegrambot-intrd.log"
+LOGFILE="LOGS/telegrambot-intrd.log"
 TIMESTAMP=`date "+%Y-%m-%d_%H:%M:%S"`
 touch $LOGFILE
 

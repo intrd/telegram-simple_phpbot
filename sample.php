@@ -11,13 +11,22 @@
 * Dependencies: See composer.json
 */
 
+require __DIR__ . '/vendor/autoload.php';
+use phpCommon\intrd;
+
+$test = new intrd();
+
+die;
+require_once("functions.php");
+
 date_default_timezone_set('America/Sao_Paulo'); //set to your timezone
 $debug=true; //disable this after setup your debuggin chatID
 $root=dirname(__FILE__)."/";
-$ext_path=$root."../";
-$tmp_path=$ext_path."TMP/";
-require_once($ext_path."php-common/functions.php");
-require_once("functions.php");
+check_dir($root."TMP/",$root."LOGS/");
+//$ext_path=$root."../";
+//$tmp_path=$root."TMP/";
+//require_once($ext_path."php-common/functions.php");
+die;
 
 $botkey="234015785:AAEsvIjg0AcWOINXR0Xt-TGLamuz9k8f10Y"; //Request your with @BotFather (the official telegram bot manager)
 $replieds=$root."replieds.txt"; //file to persist replied chats..
