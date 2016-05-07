@@ -3,47 +3,45 @@
  * Telegram Simple PHP Bot - A different and simple approach to use Telegram Bot Plataform (No SSL or setWebhook needed)
  * 
 * @package telegram-simple_phpbot
-* @version 1.0
 * @author intrd - http://dann.com.br/
 * @copyright 2016 intrd
 * @license Creative Commons Attribution-ShareAlike 4.0 - http://creativecommons.org/licenses/by-sa/4.0/
 * @link http://github.com/intrd/telegram-simple_phpbot/
-* Dependencies: See composer.json
+* Version & Dependencies: See composer.json
 */
+
 namespace telegram;
+use php\intrdCommons as i;
 class simplePhpBot {
 
-  function telegrambot_getUpdates($botkey,$offset){
-    global $tmp_path, $cookie_jar_file;
+  public function telegrambot_getUpdates($offset){
+    global $conf;
     $header=array();
-    $cookie_jar_file=$tmp_path."bot";
-    $url="https://api.telegram.org/bot$botkey/getUpdates?offset=$offset";
-    //echo $url;
-    $updates=url_get($url,$cookie_jar_file,"r",$header,$proxy=false,$proxyauth=false,$oauth=false);
+    $url="https://api.telegram.org/bot".$conf["botkey"]."/getUpdates?offset=$offset";
+    $updates=i::url_get($url,$conf["cookie_jar_file"],"r",$header,$conf["proxy"],$conf["proxyauth"]);
     return $updates;
   }
 
-  function telegrambot_sendReply($botkey,$chatID,$reply){
-    global $tmp_path, $cookie_jar_file;
+  public function telegrambot_sendReply($chatID,$reply){
+    global $conf;
     $header=array();
-    $cookie_jar_file=$tmp_path."bot";
-    $url="https://api.telegram.org/bot$botkey/sendmessage?chat_id=".$chatID."&text=".$reply;
-    //vd($url);
-    $updates=url_get($url,$cookie_jar_file,"r",$header,$proxy=false,$proxyauth=false,$oauth=false);
+    $url="https://api.telegram.org/bot".$conf["botkey"]."/sendmessage?chat_id=".$chatID."&text=".$reply;
+    $updates=i::url_get($url,$conf["cookie_jar_file"],"r",$header,$conf["proxy"],$conf["proxyauth"]);
+    i::vd($updates);
     return $updates;
   }
 
-  function reply_get($bads,$text,$screen_name,$str_id,$pp=false,$custom=false){ 
-    global $default_reply;
-    $result = $default_reply;
+  public function reply_get($text,$screen_name,$str_id,$pp=false,$custom=false){ 
+    global $conf;
+    $result = $conf["default_reply"];
     foreach ($custom as $key=>$string){
       if (strpos(strtolower($text),strtolower($key))!==false){
         $result = $string;
       }
     }
     $c=0;
-    while (preg_match($bads,strtolower($text))){ //if identify some of the $bads on text it reply some of these random things..
-      $result=strip_tags(rem_wrap($text));
+    while (preg_match($conf["bad_words"],strtolower($text))){ //if identify some of the $conf["bads"] on text it reply some of these random things.. MELHORAR ESSA FUNCAO PRA IGNORAR..
+      $result=strip_tags($i::rem_wrap($text));
       if ($c>=7){
         $rrr=rand(1,4);
         if ($rrr==1) $result="no?";
