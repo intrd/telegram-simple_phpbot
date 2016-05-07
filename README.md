@@ -22,7 +22,7 @@ $ git clone https://github.com/intrd/telegram-simple_phpbot && cd telegram-simpl
 $ composer install -o
 
 To check for update..
-$ composer update
+$ git pull && composer update
 ```
 ## Usage.. sample.php
 
