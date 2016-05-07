@@ -45,10 +45,10 @@ $ composer update
 Browse to your bot URL: `https://api.telegram.org/bot<botid>:<botkey>/sendmessage?chat_id=<chatid>&text=hello%20world!` in my sample `https://api.telegram.org/bot234015785:AAEsvIjg0AcWOINXR0Xt-TGLamuz9k8f10Y/sendmessage?chat_id=65628842&text=hello%20world!`, if the bot says `Hello World!` to you, its ok. PS: group chats use negative chatIDs, `-<chatid>`
 
 #### If you prefer not to use daemons (need a SSL webserver serving your sample.php)
-Simply setup your hook URL by browsing  
-`https://api.telegram.org/bot<botid>:<botkey>/setWebhook?url=http://yourwebserver/sample.php`  
+Simply setup your hook URL by browsing <br/>
+`https://api.telegram.org/bot<botid>:<botkey>/setWebhook?url=http://yourwebserver/sample.php` <br/> 
 ..and Telegram server will load this URL every time the bot receive a msg.
 
-That's all, 
+That's all, <br/>
 Script this 4 your needs and respect the CC license, thanks!
 
