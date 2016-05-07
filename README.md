@@ -28,7 +28,7 @@ $ composer update
 
 *TL;DR*: The sample.php file will check every 5s if someone is mentioning the bot @username or talking him in pvt. It process and reply based on his message w/ some custom triggers.
 
-### Steps to setup your bot.
+### Steps to setup your bot
 1. Open Telegram, talk w/ the `http://telegram.me/BotFather`, setup a new Telegram Bot and take a note of your `BotID:Botkey`, something like: `234015785:AAEsvIjg0AcWOINXR0Xt-TGLamuz9k8f10Y`
 2. Edit `config.ini` and set your `botkey`
 3. Search on Telegram for your `@username_bot` and start a conversation.. 
