@@ -25,17 +25,10 @@ $conf["data_path"]=$conf["root"]."DATA/";
 $conf["cookie_jar_file"]=$conf["tmp_path"].$conf["cookie"];
 $conf["replieds"]=$conf["data_path"].$conf["replieds"]; 
 
-/* Sample of a bot that reply custom based on current week day when "day of week" text is mentioned */
-$data = date('D');
-$weekday_ptbr=i::weekday_ptBR($data);
-$ctf_horario["Sun"]="Whazaaaapp??? Sunday is the day of the week following Saturday but before Monday. Know as $weekday_ptbr in pt_BR";
-$ctf_horario["Mon"]="Hey.. today is Monday.. Monday is the day of the week between Sunday and Tuesday. pt_BR translated to $weekday_ptbr";
-$ctf_horario["Tue"]="Hey... today is Tue..";
-$ctf_horario["Wed"]="Yeah today is weed.. ops, Wed.";
-$ctf_horario["Thu"]="Hmmm..";
-$ctf_horario["Fri"]="TGIF!";
-$ctf_horario["Sat"]="SAT! :D";
-$custom[$conf["trigger_custom1"]]=$ctf_horario[date('D')]; 
+/* Sample of a function that reply based on current week day when trigger_custom1 is mentioned, see trigger_custom1 at config.ini and custom1() at src/classes.php */
+$weekday = date('D');
+$trigger_custom1=b::custom1($weekday);
+$custom[$conf["trigger_custom1"]]=$trigger_custom1; 
 
 $offset = fopen($conf["replieds"], 'a') or die("Can't create file");fclose($offset);
 $offset = file($conf["replieds"]); 

@@ -27,7 +27,7 @@ class simplePhpBot {
     $header=array();
     $url="https://api.telegram.org/bot".$conf["botkey"]."/sendmessage?chat_id=".$chatID."&text=".$reply;
     $updates=i::url_get($url,$conf["cookie_jar_file"],"r",$header,$conf["proxy"],$conf["proxyauth"]);
-    i::vd($updates);
+    //i::vd($updates);
     return $updates;
   }
 
@@ -40,7 +40,8 @@ class simplePhpBot {
       }
     }
     $c=0;
-    while (preg_match($conf["bad_words"],strtolower($text))){ //if identify some of the $conf["bads"] on text it reply some of these random things.. MELHORAR ESSA FUNCAO PRA IGNORAR..
+    while (preg_match($conf["bad_words"],strtolower($text))){ //if identify some of the $conf["bads"] on text it reply some of these random things.. 
+      //improve badwords function
       $result=strip_tags($i::rem_wrap($text));
       if ($c>=7){
         $rrr=rand(1,4);
@@ -53,6 +54,18 @@ class simplePhpBot {
       $c++;
     }
     return $result;
+  }
+
+  public function custom1($weekday){
+    $weekday_ptbr=i::weekday_ptBR($weekday);
+    $day["Sun"]="Whazaaaapp??? Sunday is the day of the week following Saturday but before Monday. Know as $weekday_ptbr in pt_BR";
+    $day["Mon"]="Hey.. today is Monday.. Monday is the day of the week between Sunday and Tuesday. pt_BR translated to $weekday_ptbr";
+    $day["Tue"]="Hey... today is Tue..";
+    $day["Wed"]="Yeah today is weed.. ops, Wed.";
+    $day["Thu"]="Hmmm..";
+    $day["Fri"]="TGIF!";
+    $day["Sat"]="SAT! :D";
+    return $day[$weekday];
   }
 }
 ?>
