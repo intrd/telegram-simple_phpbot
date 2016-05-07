@@ -17,7 +17,7 @@ touch $LOGFILE
 while true
 do
 	echo "$TIMESTAMP STARTING...\n" >> $LOGFILE 
-	php sample.php >> $LOGFILE
+	php sample.php 2>&1 | tee $LOGFILE
 	sleep 5
 done
 
