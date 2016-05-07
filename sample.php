@@ -79,7 +79,7 @@ foreach ($messages as $key=>$message){
       $reply=urlencode($reply); //encode reply text to use on HTTP POST
       $reply_textbuffer=$reply;
       $reply=b::telegrambot_sendReply($from_chatid,$reply); //POST a reply to group/pvt
-      i::vd($reply);
+      //i::vd($reply); //enable for debuggin
       $httpcode=$reply["header"]["http_code"];
       if($httpcode==200 or $httpcode==403){
         if (isset($conf["debug_chatid"])){
