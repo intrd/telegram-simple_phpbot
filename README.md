@@ -46,8 +46,12 @@ Browse to your bot URL: `https://api.telegram.org/bot<botid>:<botkey>/sendmessag
 
 #### If you prefer not to use daemons (need a SSL webserver serving your sample.php)
 Simply setup your hook URL by browsing 
-`https://api.telegram.org/bot<botid>:<botkey>/setWebhook?url=http://yourwebserver/sample.php` and Telegram server will load this URL every time the bot receive a msg.
+
+`https://api.telegram.org/bot<botid>:<botkey>/setWebhook?url=http://yourwebserver/sample.php` 
+
+..and Telegram server will load this URL every time the bot receive a msg.
 
 That's all,
->Script this 4 your needs and respect the CC license, thanks!
+
+Script this 4 your needs and respect the CC license, thanks!
 
