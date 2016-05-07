@@ -2,4 +2,3 @@ vendor
 TMP
 LOGS
 DATA
-composer.lock
