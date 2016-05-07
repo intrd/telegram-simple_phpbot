@@ -60,7 +60,8 @@ foreach ($messages as $key=>$message){
     if (i::file_checkstring($conf["replieds"],$update_id)!=true){ //check and ignore replieds
       $str_id=1;
       echo $from_chatid.":".$update_id.":".$from.": ".$text."\n"; 
-      $reply=b::reply_get($text,$from,$str_id,$pp=false,$custom); //GENERATE A REPLY TEXT BASED ON YOUR TRIGGER AND BAD WORDS, SEE/EDIT reply_get() ON src/classes.php
+      //GENERATE A REPLY TEXT BASED ON YOUR TRIGGER AND BAD WORDS, SEE/EDIT reply_get() ON src/classes.php
+      $reply=b::reply_get($text,$from,$str_id,$pp=false,$custom); 
       if ($chat_type!="private"){
         if (strpos($text,$conf["trigger"]) === false and $pvt==true){
           i::fwrite_a($conf["replieds"],$update_id."\r\n");
