@@ -19,7 +19,7 @@ $ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/lo
 
 Now download the package (Composer automatically install all dependencies)
 $ git clone https://github.com/intrd/telegram-simple_phpbot && cd telegram-simple_phpbot
-$ composer install
+$ composer install && composer dumpautoload -o
 
 To check for update..
 $ composer update
