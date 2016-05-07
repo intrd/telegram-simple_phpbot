@@ -1,0 +1,67 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "761e9a5fb6e516541b9c444bc90a0af5",
+    "content-hash": "d531ead8004ca4bba40668f8c488e8f6",
+    "packages": [
+        {
+            "name": "intrd/php-common",
+            "version": "1.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/intrd/php-common.git",
+                "reference": "c437495fe31973fea58ad0a07186e44c231e3755"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/intrd/php-common/zipball/c437495fe31973fea58ad0a07186e44c231e3755",
+                "reference": "c437495fe31973fea58ad0a07186e44c231e3755",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "CC-BY-SA-4.0"
+            ],
+            "authors": [
+                {
+                    "name": "intrd",
+                    "email": "x@dann.com.br",
+                    "homepage": "http://dann.com.br",
+                    "role": "Developer"
+                }
+            ],
+            "description": "php - intrd common functions",
+            "homepage": "https://github.com/intrd/php-common",
+            "keywords": [
+                "common",
+                "intrd",
+                "php"
+            ],
+            "time": "2016-05-07 01:05:39"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "intrd/php-common": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.3.0"
+    },
+    "platform-dev": []
+}
