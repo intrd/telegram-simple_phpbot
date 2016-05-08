@@ -1,5 +1,4 @@
 **telegram-simple_phpbot**
-============
 
 Telegram Simple PHP Bot - A different and simple approach to use Telegram Bot Plataform (No SSL or setWebhook needed)
 
@@ -37,6 +36,7 @@ Telegram Simple PHP Bot - A different and simple approach to use Telegram Bot Pl
 </table>
 
 **Installation & updating**
+============
 
 System requiriments & dependencies
 
