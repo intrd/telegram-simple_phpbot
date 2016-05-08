@@ -30,7 +30,7 @@
             <td><a href="http://creativecommons.org/licenses/by-sa/4.0">Creative Commons Attribution-ShareAlike 4.0</a></td>
         </tr>
         <tr>
-            <th>Docbloc</th>
+            <th>@docbloc</th>
             <td>1.0</td>
         </tr>
         <tr>
