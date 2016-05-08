@@ -1,3 +1,6 @@
+**telegram-simple_phpbot**
+============
+
 Telegram Simple PHP Bot - A different and simple approach to use Telegram Bot Plataform (No SSL or setWebhook needed)
 
 **Tags**: telegram, bot, eggdrop, php 
@@ -12,7 +15,7 @@ Telegram Simple PHP Bot - A different and simple approach to use Telegram Bot Pl
         <td>1.1</td>
     </tr>
     <tr>
-        <th>Github</th>
+        <th>Project URL</th>
         <td><a href="https://github.com/intrd/telegram-simple_phpbot">https://github.com/intrd/telegram-simple_phpbot</a></td>
      <tr/>
     <tr>
@@ -33,8 +36,7 @@ Telegram Simple PHP Bot - A different and simple approach to use Telegram Bot Pl
     </tr>
 </table>
 
-Installation & updating
-============
+**Installation & updating**
 
 System requiriments & dependencies
 
@@ -67,10 +69,12 @@ $ git pull && composer update
 
 ![telegram_simple_bot](/imgs/telegram_simple_bot.jpg?raw=true "telegram_simple_bot")
 
-#### Manually check (botid/botkey/chatid) 
+### Manually check (botid/botkey/chatid) 
 Browse to your bot URL: `https://api.telegram.org/bot<botid>:<botkey>/sendmessage?chat_id=<chatid>&text=hello%20world!` in my sample `https://api.telegram.org/bot234015785:AAEsvIjg0AcWOINXR0Xt-TGLamuz9k8f10Y/sendmessage?chat_id=65628842&text=hello%20world!`, if the bot says `Hello World!` to you, its ok. PS: group chats use negative chatIDs, `-<chatid>`
 
-#### If you prefer not to use daemons (need a SSL webserver serving your sample.php)
+### If you prefer not to use daemons (SSL Webserver)
+Need a SSL webserver serving your sample.php
+
 Simply setup your hook URL by browsing <br/>
 `https://api.telegram.org/bot<botid>:<botkey>/setWebhook?url=http://yourwebserver/sample.php` <br/> 
 ..and Telegram server will load this URL every time the bot receive a msg.
