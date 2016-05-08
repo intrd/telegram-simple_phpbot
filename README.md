@@ -33,7 +33,7 @@ Telegram Simple PHP Bot - A different and simple approach to use Telegram Bot Pl
     </tr>
 </table>
 
-Installation & updating
+Installation
 ============
 
 System requiriments & dependencies
