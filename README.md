@@ -33,7 +33,7 @@ No <u>SSL</u> or <u>setWebhook</u> needed.
     </tr>
     <tr>
         <th>Dependencies</th>
-        <td>php >=5.3.0, intrd/php-common >=1.0.x-dev &lt;<dev-master</td>
+        <td>php >=5.3.0, intrd/php-common >=1.0.x-dev &lt;dev-master</td>
     </tr>
 </table>
 
