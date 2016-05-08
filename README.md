@@ -12,10 +12,6 @@ Telegram Simple PHP Bot - A different and simple approach to use Telegram Bot Pl
         <td>1.1</td>
     </tr>
     <tr>
-        <th>Homepage</th>
-        <td><a href="http://dann.com.br/telegram-simple_phpbot">http://dann.com.br/telegram-simple_phpbot</a></td>
-    </tr>
-    <tr>
         <th>Github</th>
         <td><a href="https://github.com/intrd/telegram-simple_phpbot">https://github.com/intrd/telegram-simple_phpbot</a></td>
      <tr/>

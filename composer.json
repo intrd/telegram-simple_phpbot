@@ -2,7 +2,7 @@
     "name": "intrd/telegram-simple_phpbot",
     "description": "Telegram Simple PHP Bot - A different and simple approach to use Telegram Bot Plataform (No SSL or setWebhook needed)",
     "keywords": ["telegram","bot","eggdrop","php"],
-    "homepage": "https://github.com/intrd/telegram-simple_phpbot",
+    "homepage": "http://github.com/intrd/telegram-simple_phpbot",
     "authors": [
             {
                 "name": "intrd",
@@ -13,6 +13,7 @@
         ],
     "license": "CC-BY-SA-4.0",
     "extra": {
+        "author_twitter":"intrd"
         "cc_author_name":"intrd",
         "license_title":"Creative Commons Attribution-ShareAlike 4.0",
         "license_url":"http://creativecommons.org/licenses/by-sa/4.0"
