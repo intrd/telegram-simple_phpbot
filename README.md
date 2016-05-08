@@ -50,7 +50,7 @@ $ composer install -o
 To check for update..
 $ git pull && composer update
 ```
-## Usage.. sample.php
+## Usage
 
 *TL;DR*: The sample.php file will check every 5s if someone is mentioning the bot @username or talking him in pvt. It process and reply based on his message w/ some custom triggers.
 
@@ -67,13 +67,13 @@ $ git pull && composer update
 
 ![telegram_simple_bot](/imgs/telegram_simple_bot.jpg?raw=true "telegram_simple_bot")
 
-## Manually check (botid/botkey/chatid) 
+### Tips 
+**Manually check (botid/botkey/chatid)**
+
 Browse to your bot URL: `https://api.telegram.org/bot<botid>:<botkey>/sendmessage?chat_id=<chatid>&text=hello%20world!` in my sample `https://api.telegram.org/bot234015785:AAEsvIjg0AcWOINXR0Xt-TGLamuz9k8f10Y/sendmessage?chat_id=65628842&text=hello%20world!`, if the bot says `Hello World!` to you, its ok. PS: group chats use negative chatIDs, `-<chatid>`
 
-## If you prefer not to use daemons (SSL Webserver)
-Need a SSL webserver serving your sample.php
-
-Simply setup your hook URL by browsing <br/>
+**If you prefer not to use daemons (SSL Webserver)**
+With a SSL webserver serving your sample.php, simply setup your hook URL by browsing: <br/>
 `https://api.telegram.org/bot<botid>:<botkey>/setWebhook?url=http://yourwebserver/sample.php` <br/> 
 ..and Telegram server will load this URL every time the bot receive a msg.
 
