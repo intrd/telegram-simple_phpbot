@@ -5,7 +5,7 @@ Telegram Simple PHP Bot - A different and simple approach to use Telegram Bot Pl
 <table>
 	<tr>
 	    <th>Package</th>
-	    <td>telegram-simple_phpbot</td>
+	    <td>intrd/telegram-simple_phpbot</td>
 	</tr>
     <tr>
         <th>Version</th>
