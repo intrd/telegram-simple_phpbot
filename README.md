@@ -6,8 +6,11 @@ No <u>SSL</u> or <u>setWebhook</u> needed.
 	<tr>
 	    <th>Package</th>
 	    <td>telegram-simple_phpbot</td>
-	    <td>Version: 1.1</td>
 	</tr>
+    <tr>
+        <th>Version</th>
+        <td>1.1</td>
+    </tr>
     <tr>
         <th>Homepage</th>
         <td><a href="http://dann.com.br/telegram-simple_phpbot">http://dann.com.br/telegram-simple_phpbot</a></td>
@@ -37,7 +40,7 @@ No <u>SSL</u> or <u>setWebhook</u> needed.
 Installation & updating
 ============
 
-Installing system requiriments & dependencies
+System requiriments & dependencies
 
 ```
 $ sudo apt-get update & apt-get upgrade
