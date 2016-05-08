@@ -15,7 +15,6 @@ use php\intrdCommons as i;
 use telegram\simplePhpBot as b;
 
 if (!file_exists("config.ini")) die("\n*** config.ini does no exists!\n");
-
 $conf = parse_ini_file("config.ini", false);
 
 date_default_timezone_set($conf["timezone"]); 

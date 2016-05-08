@@ -1,18 +1,48 @@
+**Telegram Simple PHP Bot** A different and simple approach to use Telegram Bot Plataform 
+
+No <u>SSL</u> or <u>setWebhook</u> needed.
+
+<table>
+	<tr>
+	    <th>Package</th>
+	    <td>telegram-simple_phpbot</td>
+	</tr>
+    <tr>
+        <th>Version</th>
+        <td>1.1</td>
+    </tr>
+    <tr>
+        <th>Homepage</th>
+        <td><a href="http://dann.com.br/telegram-simple_phpbot">http://dann.com.br/telegram-simple_phpbot</a></td>
+    </tr>
+    <tr>
+        <th>Github</th>
+        <td><a href="https://github.com/intrd/telegram-simple_phpbot">https://github.com/intrd/telegram-simple_phpbot</a></td>
+     <tr/>
+    <tr>
+       <th>Author</th>
+       <td><a href="http://dann.com.br/">Danilo Salles</a> (<a href="http://twitter.com/intrd">@intrd</a>)</td>
+    </tr>
+    <tr>
+        <th>Copyright</th>
+        <td>(CC-BY-SA-4.0) 2016, intrd</td>
+    </tr>
+    <tr>
+        <th>License</th>
+        <td><a href="http://creativecommons.org/licenses/by-sa/4.0">Creative Commons Attribution-ShareAlike 4.0</a></td>
+    </tr>
+    <tr>
+        <th>Dependencies</th>
+        <td>php >=5.3.0, intrd/php-common >=1.0.x-dev</td>
+    </tr>
+</table>
+
+Installation & updating
+============
+
+Installing system requiriments & dependencies
+
 ```
-/**
- * Telegram Simple PHP Bot - A different and simple approach to use Telegram Bot Plataform (No SSL or setWebhook needed)
- * 
-* @package telegram-simple_phpbot
-* @author intrd - http://dann.com.br/
-* @copyright 2016 intrd
-* @license Creative Commons Attribution-ShareAlike 4.0 - http://creativecommons.org/licenses/by-sa/4.0/
-* @link http://github.com/intrd/telegram-simple_phpbot/
-* Version & Dependencies: See composer.json
-*/
-```
-## Installation & updating
-```
-Install system requiriments 
 $ sudo apt-get update & apt-get upgrade
 $ sudo apt-get install curl git php5-curl php5-cli
 $ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
