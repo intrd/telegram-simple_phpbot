@@ -1,5 +1,3 @@
-**telegram-simple_phpbot**
-
 Telegram Simple PHP Bot - A different and simple approach to use Telegram Bot Plataform (No SSL or setWebhook needed)
 
 **Tags**: telegram, bot, eggdrop, php 
@@ -35,7 +33,7 @@ Telegram Simple PHP Bot - A different and simple approach to use Telegram Bot Pl
     </tr>
 </table>
 
-**Installation & updating**
+Installation & updating
 ============
 
 System requiriments & dependencies
