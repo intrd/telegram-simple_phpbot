@@ -67,10 +67,10 @@ $ git pull && composer update
 
 ![telegram_simple_bot](/imgs/telegram_simple_bot.jpg?raw=true "telegram_simple_bot")
 
-### Manually check (botid/botkey/chatid) 
+## Manually check (botid/botkey/chatid) 
 Browse to your bot URL: `https://api.telegram.org/bot<botid>:<botkey>/sendmessage?chat_id=<chatid>&text=hello%20world!` in my sample `https://api.telegram.org/bot234015785:AAEsvIjg0AcWOINXR0Xt-TGLamuz9k8f10Y/sendmessage?chat_id=65628842&text=hello%20world!`, if the bot says `Hello World!` to you, its ok. PS: group chats use negative chatIDs, `-<chatid>`
 
-### If you prefer not to use daemons (SSL Webserver)
+## If you prefer not to use daemons (SSL Webserver)
 Need a SSL webserver serving your sample.php
 
 Simply setup your hook URL by browsing <br/>
