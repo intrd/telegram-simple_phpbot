@@ -1,6 +1,6 @@
 <table>
     <tr>
-        <td>Telegram Simple PHP Bot - A different and simple approach to use Telegram Bot Plataform (No SSL or setWebhook needed)</td>
+        <th>Telegram Simple PHP Bot - A different and simple approach to use Telegram Bot Plataform (No SSL or setWebhook needed)</th>
     </tr>
     <tr>
         <th>Package</th>
