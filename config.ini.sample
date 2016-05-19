@@ -1,0 +1,37 @@
+;;
+; Telegram Simple PHP Bot - A different and simple approach to use Telegram Bot Plataform (No SSL or setWebhook needed)
+;
+; @package intrd/telegram-simple_phpbot
+; @version 1.1
+; @tags telegram, bot, eggdrop, php
+; @link http://github.com/intrd/telegram-simple_phpbot
+; @author intrd (Danilo Salles) - http://dann.com.br
+; @copyright (CC-BY-SA-4.0) 2016, intrd
+; @license Creative Commons Attribution-ShareAlike 4.0 - http://creativecommons.org/licenses/by-sa/4.0
+; Dependencies: 
+; - php >=5.3.0
+; - intrd/php-common >=1.0.x-dev <dev-master
+;; @docbloc 1.1
+
+[global]
+debug = TRUE 	;enable it only at first run to get your chatID
+
+[telegram]
+botkey = "234015785:AAEsvIjg0AcWOINXR0Xt-TGLamuz9k8f10Y" 	;Request your with @BotFather (the official telegram bot manager)
+default_reply = "Yeah im working.. :)" 	;default reply
+trigger = "intrd_bot" 	;sentence to trigger default bot reply action on groups..
+trigger_custom1 = "day of week" 	;sentence to trigger a custom function, in this case dayofweek()
+debug_chatid = "2722434" 	;chatID to debug and monitor all bot activities.. (talk to your bot in pvt and enable $debug to retrieve your chatID)
+bad_words = "/(fuck|fodase|meuovo)+/i" 	;triggered texts with these badwords will be ignored..
+
+[localization]
+timezone = "America/Sao_Paulo" 	;set to your timezone
+
+[dirs_and_filenames]
+logfile = "telegram_simplebot.txt"
+cookie = "cookie.txt"
+replieds = "replieds.txt"
+
+[connection]
+proxy = FALSE 	;all bot HTTP_GET request will be tunneled by proxy (format ip:port)
+proxyauth = FALSE 	;format user:pw
