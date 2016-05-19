@@ -37,6 +37,8 @@ Telegram Simple PHP Bot - A different and simple approach to use Telegram Bot Pl
 </span>
 <!-- @docbloc 1.1 -->
 
+![telegram_simple_bot](/imgs/telegram_simple_bot.jpg?raw=true "telegram_simple_bot")
+
 Installation
 ============
 
@@ -68,8 +70,6 @@ $ git pull && composer update
 7. To check if someone is talking w/ your bot every 5 seconds use my bash daemon sample `./run.sh &`, or `watch -n5 php sample.php` or setup a cronjob
 8. Now put him on a group.. 
 9. Test if your bot is replying when you mention his `trigger`, ask him about `day of week`, say him some of `$bads`, customize `reply_get()` function.
-
-![telegram_simple_bot](/imgs/telegram_simple_bot.jpg?raw=true "telegram_simple_bot")
 
 ### Tips 
 **Manually check (botid/botkey/chatid)**
