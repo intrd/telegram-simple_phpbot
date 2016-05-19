@@ -5,7 +5,7 @@
     "homepage": "http://github.com/intrd/telegram-simple_phpbot",
     "authors": [
             {
-                "name": "intrd",
+                "name": "intrd (Danilo Salles)",
                 "email": "x@dann.com.br",
                 "homepage": "http://dann.com.br",
                 "role": "Developer"
@@ -23,7 +23,7 @@
     },
     "extra": {
         "author_twitter":"intrd",
-        "cc_author_name":"intrd",
+        "copyright_author":"intrd",
         "license_title":"Creative Commons Attribution-ShareAlike 4.0",
         "license_url":"http://creativecommons.org/licenses/by-sa/4.0"
     }

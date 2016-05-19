@@ -1,14 +1,18 @@
 <?php
 /**
  * Telegram Simple PHP Bot - A different and simple approach to use Telegram Bot Plataform (No SSL or setWebhook needed)
- * 
-* @package telegram-simple_phpbot
-* @author intrd - http://dann.com.br/
-* @copyright 2016 intrd
-* @license Creative Commons Attribution-ShareAlike 4.0 - http://creativecommons.org/licenses/by-sa/4.0/
-* @link http://github.com/intrd/telegram-simple_phpbot/
-* Version & Dependencies: See composer.json
-*/
+* 
+* @package intrd/telegram-simple_phpbot
+* @version 1.1
+* @tags telegram, bot, eggdrop, php
+* @link http://github.com/intrd/telegram-simple_phpbot
+* @author intrd (Danilo Salles) - http://dann.com.br
+* @copyright (CC-BY-SA-4.0) 2016, intrd
+* @license Creative Commons Attribution-ShareAlike 4.0 - http://creativecommons.org/licenses/by-sa/4.0
+* Dependencies: 
+* - php >=5.3.0
+* - intrd/php-common >=1.0.x-dev <dev-master
+*** @docbloc 1.1 */
 
 require __DIR__ . '/vendor/autoload.php';
 use php\intrdCommons as i;

@@ -1,44 +1,41 @@
-<span id="docbloc">
-    Telegram Simple PHP Bot - A different and simple approach to use Telegram Bot Plataform (No SSL or setWebhook needed)
-    <table>
-        <tr>
-            <th>Package</th>
-            <td>intrd/telegram-simple_phpbot</td>
-        </tr>
-        <tr>
-            <th>Version</th>
-            <td>1.1</td>
-        </tr>
-        <tr>
-            <th>Tags</th>
-            <td>telegram, bot, eggdrop, php </td>
-        </tr>
-        <tr>
-            <th>Project URL</th>
-            <td><a href="https://github.com/intrd/telegram-simple_phpbot">https://github.com/intrd/telegram-simple_phpbot</a></td>
-         <tr/>
-        <tr>
-           <th>Author</th>
-           <td><a href="http://dann.com.br/">Danilo Salles</a> (<a href="http://twitter.com/intrd">@intrd</a>)</td>
-        </tr>
-        <tr>
-            <th>Copyright</th>
-            <td>(CC-BY-SA-4.0) 2016, intrd</td>
-        </tr>
-        <tr>
-            <th>License</th>
-            <td><a href="http://creativecommons.org/licenses/by-sa/4.0">Creative Commons Attribution-ShareAlike 4.0</a></td>
-        </tr>
-        <tr>
-            <th>@docbloc</th>
-            <td>1.0</td>
-        </tr>
-        <tr>
-            <th>Dependencies</th>
-            <td>php >=5.3.0, intrd/php-common >=1.0.x-dev &lt;dev-master</td>
-        </tr>
-    </table>
+<!-- docbloc -->
+<span id='docbloc'>
+Telegram Simple PHP Bot - A different and simple approach to use Telegram Bot Plataform (No SSL or setWebhook needed)
+<table>
+<tr>
+<th>Package</th>
+<td>intrd/telegram-simple_phpbot</td>
+</tr>
+<tr>
+<th>Version</th>
+<td>1.1</td>
+</tr>
+<tr>
+<th>Tags</th>
+<td>telegram, bot, eggdrop, php</td>
+</tr>
+<tr>
+<th>Project URL</th>
+<td>http://github.com/intrd/telegram-simple_phpbot</td>
+</tr>
+<tr>
+<th>Author</th>
+<td>intrd (Danilo Salles) - http://dann.com.br</td>
+<tr>
+<th>Copyright</th>
+<td>(CC-BY-SA-4.0) 2016, intrd</td>
+</tr>
+<tr>
+<th>License</th>
+<td><a href='http://creativecommons.org/licenses/by-sa/4.0'>Creative Commons Attribution-ShareAlike 4.0</a></td>
+</tr>
+<tr>
+<th>Dependencies</th>
+<td> &#8226; php >=5.3.0 &#8226; intrd/php-common >=1.0.x-dev <dev-master</td>
+</tr>
+</table>
 </span>
+<!-- @docbloc 1.1 -->
 
 Installation
 ============
